@@ -123,6 +123,106 @@
             <img src="../common/img/36.png" alt="">
             <span>好评率99.64%</span>
           </div>
+          <div class="picture">
+            <ul>
+              <li>
+                <div class="pictureContent">
+                  <div class="imgContent">
+                    <img src="../common/img/47.png" alt="">
+                    <div class="font">加入E宠2年2月</div>
+                  </div>
+                  <div class="petName">
+                    <span class="f1">盒**喵</span>
+                    <span class="f2">中华田园猫</span>
+                  </div>
+                  <div class="description">
+
+                    不知不觉，陪伴E宠三年多了。我家盒小喵也三岁多了。
+                    在这里购物，我觉得放心，安心，省心。
+                    质量有保障，售货服务也很贴心，及时。
+                    这不仅仅是个购物平台，更是爱猫人的天地。
+                    祝福E宠可以越走越好，有更多丰富的商品
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pictureContent">
+                  <div class="imgContent">
+                    <img src="../common/img/48.png" alt="">
+                    <div class="font">加入E宠2年2月</div>
+                  </div>
+                  <div class="petName">
+                    <span class="f1">盒**喵</span>
+                    <span class="f2">中华田园猫</span>
+                  </div>
+                  <div class="description">
+
+                    不知不觉，陪伴E宠三年多了。我家盒小喵也三岁多了。
+                    在这里购物，我觉得放心，安心，省心。
+                    质量有保障，售货服务也很贴心，及时。
+                    这不仅仅是个购物平台，更是爱猫人的天地。
+                    祝福E宠可以越走越好，有更多丰富的商品
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pictureContent">
+                  <div class="imgContent">
+                    <img src="../common/img/49.png" alt="">
+                    <div class="font">加入E宠2年2月</div>
+                  </div>
+                  <div class="petName">
+                    <span class="f1">盒**喵</span>
+                    <span class="f2">中华田园猫</span>
+                  </div>
+                  <div class="description">
+
+                    不知不觉，陪伴E宠三年多了。我家盒小喵也三岁多了。
+                    在这里购物，我觉得放心，安心，省心。
+                    质量有保障，售货服务也很贴心，及时。
+                    这不仅仅是个购物平台，更是爱猫人的天地。
+                    祝福E宠可以越走越好，有更多丰富的商品
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pictureContent">
+                  <div class="imgContent">
+                    <img src="../common/img/50.png" alt="">
+                    <div class="font">加入E宠2年2月</div>
+                  </div>
+                  <div class="petName">
+                    <span class="f1">盒**喵</span>
+                    <span class="f2">中华田园猫</span>
+                  </div>
+                  <div class="description">
+
+                    不知不觉，陪伴E宠三年多了。我家盒小喵也三岁多了。
+                    在这里购物，我觉得放心，安心，省心。
+                    质量有保障，售货服务也很贴心，及时。
+                    这不仅仅是个购物平台，更是爱猫人的天地。
+                    祝福E宠可以越走越好，有更多丰富的商品
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <split></split>
+        <div class="footContent">
+          <div class="top">
+            <span class="f1">触屏版</span>
+            <span>手机客户端</span>
+            <span>关于我们</span>
+            <span>联系我们</span>
+          </div>
+          <div class="bottom">
+            © wap.epet.com 版权：重庆易宠科技有限公司
+          </div>
         </div>
       </div>
     </div>
@@ -144,11 +244,13 @@
     },
     methods:{
       _initScroll(){
-        this.$nextTick(()=>{
-          const scroll=new BScroll(this.$refs.sWrapper,{
-            click:true
+        setTimeout(()=>{
+          this.$nextTick(()=>{
+            const scroll=new BScroll(this.$refs.sWrapper,{
+              click:true
+            })
           })
-        })
+        },50)
       }
     }
   }
@@ -157,12 +259,11 @@
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../common/stylus/mixins.styl"
   .cotent
-    padding-top 10px
     height 590px
     width 100%
     .mainWrapper
       width 100%
-      height 3000px
+      height 3150px
       .slide
         width 100%
         height 160px
@@ -293,16 +394,96 @@
             width 100%
             height 100%
       .judgeDiv
+        height 583px
         position relative
-        height 45px
         text-align center
-        img
-          width auto
+        .text
           height 45px
-        span
-          color: #999
+          img
+            width auto
+            height 45px
+          span
+            color: #999
+            font-size 12px
+            position absolute
+            top 17px
+            right 10px
+        .picture
+          width 100%
+          height 538px
+          box-sizing border-box
+          padding-right 10px
+          padding-bottom 10px
+          ul>li
+            width 50%
+            float left
+            .pictureContent
+              background: #f5f5f5
+              padding-bottom 15px
+              margin-left 10px
+              margin-top 10px
+              .imgContent
+                position relative
+                overflow hidden
+                text-align center
+                img
+                  width 100%
+                  height 150px
+                .font
+                  line-height 1.6
+                  width 100%
+                  font-size 12px
+                  color: #fff
+                  position absolute
+                  bottom 2px
+                  background: rgba(0,0,0,.4)
+              .petName
+                width 100%
+                bottom 0
+                box-sizing border-box
+                height 19px
+                padding-top 5px
+                padding-left 5px
+                padding-right 5px
+                font-size 12px
+                .f1
+                  line-height 1.5
+                  height 19px
+                  float left
+                  width 39px
+                  color: #333
+                .f2
+                  line-height 1.5
+                  padding: 0 5px
+                  height 19px
+                  float right
+                  background: #ddd
+                  border-radius: 5px
+              .description
+                line-height 1.6
+                font-size 13px
+                overflow hidden
+                margin-top 10px
+                padding-right 5px
+                padding-left 5px
+                height 60px
+                color #999
+      .footContent
+        height 81px
+        width 100%
+        padding-top 5px
+        .top
+          font-size 14px
+          box-sizing border-box
+          height 42px
+          padding 15px 0 5px
+          text-align center
+          .f1
+            color red
+          span
+            padding-right 10px
+
+        .bottom
           font-size 12px
-          position absolute
-          top 17px
-          right 10px
+          text-align center
 </style>

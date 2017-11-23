@@ -5,6 +5,8 @@ import firsts from '../pages/firsts.vue'
 import types from '../pages/types.vue'
 import carts from '../pages/carts.vue'
 import myPets from '../pages/myPets.vue'
+import fenlei from '../pages/fenlei.vue'
+import pinpai from '../pages/pinpai.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -19,7 +21,22 @@ export default new VueRouter({
     },
     {
       path:'/types',
-      component:types
+      component:types,
+      children:[
+        {
+          path:'/types',
+          redirect:'/types/fenlei'
+        },
+        {
+          path:'/types/fenlei',
+          component:fenlei
+        },
+        {
+          path:'/types/pinpai',
+          component:pinpai
+        }
+      ]
+
     },
     {
       path:'/carts',
